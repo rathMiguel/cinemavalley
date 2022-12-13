@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+#test-modal{
+  position: absolute;
+  z-index: 10000;
+  background-color: rgba(#000, 0.8);
+  width: 100vw;
+  height: 100vh;
+}
+
+#test-modal-in{
+  background-color: #FFF;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  position: relative;
+  z-index: 100100;
+  
+  dl{
+    margin-bottom: 1.5em;
+    dt{
+      font-weight: 700;
+    }
+  }
+
+  ul{
+    margin-bottom: 1.5em;
+  }
+
+  span.title{
+    display: block;
+    font-weight: 700;
+  }
+}

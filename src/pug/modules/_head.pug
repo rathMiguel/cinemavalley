@@ -1,0 +1,24 @@
+meta(charset=general.encode)
+meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+if description
+  meta(name='description', content=description)
+if keywords
+  meta(name='keywords', content=keywords)
+if general.norobots
+  meta(name="robots" content="noindex, nofollow")
+if general.formatDetection
+  meta(name="format-detection" content="telephone=no,address=no,email=no")
+meta#viewport(name="viewport" content=general.viewportContent)
+if general.ogp
+  meta(property='og:title', content=title)
+  meta(property='og:type', content=general.ogType)
+  meta(property='og:url', content=general.siteUrl + dirName)
+  meta(property='og:image', content=general.siteUrl + general.ogImage)
+if general.twitterCard
+  meta(name='twitter:site', content='@' + general.twitterUser)
+  meta(name='twitter:card', content='summary')
+if general.useMinCss
+  link(rel="stylesheet" type="text/css" href=depth + path.css + "style.min.css")
+else
+  link(rel="stylesheet" type="text/css" href=depth + path.css + "vendor.css")
+  link(rel="stylesheet" type="text/css" href=depth + path.css + "style.css")

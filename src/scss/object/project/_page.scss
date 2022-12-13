@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+.area-pagetitle{
+  .bg-pagetitle{
+    background-image: url('../img/DM_bg.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 284px;
+    padding-top: 176px;
+    @include media(sp){
+      width: 375px;
+      background-size: contain;
+    }
+    @include media(pc){
+      padding-top: 120px;
+      background-position: right bottom;
+      background-size: 1000px;
+      padding-bottom: 500px;
+      margin-bottom: -400px;
+    }
+  }
+}
+
+.title-pagetitle{
+  font-size: 22px;
+}
+
+.reserve-system_main{
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  @include media(pc){
+    margin-bottom: 150px;
+  }
+}
+
+//
+// page content
+//
+
+.page-content{
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  // 基本タグを微調整する場合
+  p{
+    margin-bottom: 2.5em;
+  }
+  h1{
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  h2{
+    font-size: 1.5em;
+    margin: 0.83em 0;
+  }
+  h3{
+    font-size: 1.17em;
+    margin: 1em 0;
+  }
+  h4{
+    font-size: 1em;
+    margin: 1.33em 0;
+  }
+  h5{
+    font-size: 0.83em;
+    margin: 1.67em 0;
+  }
+  h6{
+    font-size: 0.67em;
+    margin: 2.33em 0;
+  }
+  strong{
+    font-weight: 700;
+  }
+  small{
+    font-size: 80%;
+  }
+  ul, ol{
+    margin: 1em 0;
+  }
+  ul{
+    list-style-type: circle;
+    li{}
+  }
+  ol{
+    list-style-type: decimal;
+    li{
+    }
+  }
+}
+
+//
+// reservation
+//
+
+#courseMainPanel{
+  background-color: #868784;
+  .selectPanel{
+    background-color: #868784 !important;
+  }
+}
+
+#daysListPanel{
+  border-right: 1px solid #868784;
+}
+
+#booking-package_schedulePage{
+  color: #000 !important;
+  .box_shadow{
+    box-shadow: none !important;
+    margin-left: -3px !important;
+  }
+}
+
+#booking-package_inputFormPanel{
+
+  .row:nth-of-type(4){
+    // background-color: #FFF !important;
+    .value{
+      &:after{
+        content: "（税抜）";
+      }
+    }
+  }
+}

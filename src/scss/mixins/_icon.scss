@@ -1,0 +1,24 @@
+// Font Awesome
+@import "../setting/_fa_variables";
+
+@mixin fa($icon){
+	font-family: FontAwesome;
+	content: $icon;
+}
+
+@mixin icon-image($src){
+    background: url(#{$src}) left top no-repeat;
+    content: "";
+    display: inline-block;
+    background-size: contain;
+}
+
+@mixin icon-size($src, $w, $h, $ratio:1){
+    width: ($w / $ratio);
+    height: ($h / $ratio);
+}
+
+@mixin icon($src, $w, $h, $ratio:1){
+    @include icon-image($src);
+    @include icon-size($src, $w, $h, $ratio);
+}

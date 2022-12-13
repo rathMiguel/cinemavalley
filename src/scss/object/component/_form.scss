@@ -1,0 +1,342 @@
+@charset "utf-8";
+
+////////////////////////////////
+// Settings
+////////////////////////////////
+
+$input-border: 1px solid #CCC;
+
+////////////////////////////////
+// Styles
+////////////////////////////////
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select{
+  border: $input-border;
+  box-sizing: border-box;
+  padding: 8px 8px;
+  font-family: inherit;
+  font-size: 16px;
+  &:focus{
+    background-color: lighten(#FFEFBF,8);
+    box-shadow: 0 0 3px rgba(#73B9FF,0.8);
+  }
+}
+
+textarea{
+  height: 12em;
+}
+
+.select-arrow{
+  display: inline-block;
+  position: relative;
+  &:before{
+    @include fa($fa-angle-down);
+    position: absolute;
+    right: 12px;
+    margin-top: -12px;
+    top: 50%;
+  }
+}
+
+
+////////////////////////////////
+// Input
+////////////////////////////////
+
+.input-full{
+  width: 100%;
+}
+
+.input-long{
+  @include media(pc){
+    width: 30em;
+  }
+  @include media(sp){
+    width: 100%;
+  }
+}
+
+.input-medium{
+  @include media(pc){
+    width: 20em;
+  }
+  @include media(sp){
+    width: 100%;
+  }
+}
+
+.input-short{
+  @include media(pc){
+    width: 10em;
+  }
+  @include media(sp){
+    width: 6em;
+  }
+}
+
+.label-required{
+  float: right;
+  margin-left: 1em;
+  display: inline-block;
+  font-size: 0.9em;
+  color: #FFF;
+  background-color: $color-error;
+  padding: 3px 10px;
+}
+
+.input-required{
+  background-color: #FEE;
+  &.valid{
+    background-color: #FFF;
+  }
+}
+
+.group-required{
+  label{
+    background-color: #FEE;
+  }
+  &.valid{
+    label{
+      background-color: #EFEFEF;
+    }
+  }
+}
+
+.list-block-form{
+  @include media(sp){
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  li{
+    box-sizing: border-box;
+    @include media(pc){
+      margin: 5px 0;
+    }
+    @include media(sp){
+      margin: 5px 0;
+    }
+  }
+}
+
+.list-inline-form{
+  @include media(sp){
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  li{
+    box-sizing: border-box;
+    @include media(pc){
+      display: inline-block;
+      margin: 0;
+      margin-right: 1em;
+    }
+    @include media(sp){
+      margin: 5px 0;
+    }
+  }
+}
+
+%label-set{
+  label{
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+    @include media(sp){
+      display: block;
+      padding: 18px 12px;
+      border-radius: 5px;
+      padding-left: 35px;
+    }
+    &:before, &:after{
+      transition: all 0.2s linear;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      content: "";
+    }
+    &:before{
+      background-color: #FFF;
+    }
+  }
+  input[type="checkbox"],
+  input[type="radio"]{
+    &:checked{
+      & + label{
+        background-color: #EFEFEF;
+        @include media(sp){
+          background-color: #FFEFBF;
+        }
+        &:after{
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}
+
+.label-full{
+  @include media(sp){
+    width: 100%;
+    clear: both;
+  }
+}
+
+.label-half{
+  @include media(sp){
+    width: 50%;
+    padding: 0 5px;
+    float: left;
+  }
+  label{
+    @include media(sp){
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+  }
+  &:nth-child(2n){
+    @include media(sp){
+      padding-right: 0;
+    }
+  }
+  &:nth-child(2n+1){
+    @include media(sp){
+      clear: both;
+    }
+  }
+  
+}
+
+////////////////////////////////
+// Checkbox
+////////////////////////////////
+
+.list-checkbox{
+  @extend %label-set;
+  label{
+    &:before{
+      height: 16px;
+      width: 16px;
+      margin-top: -10px;
+      border: 2px solid #BBB;
+    }
+    &:after{
+      box-sizing: border-box;
+      height: 10px;
+      width: 17px;
+      opacity: 0;
+      margin-top: -7px;
+      border-left: 4px solid $color-primary;
+      border-bottom: 4px solid $color-primary;
+    }
+  }
+  input[type="checkbox"]{
+    position: absolute;
+    left: -9999px;
+    &:checked{
+      & + label{
+        &:after{
+          height: 10px;
+          width: 17px;
+          border-bottom: 4px solid $color-primary;
+          border-left: 4px solid $color-primary;
+          transform: rotate(-45deg);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+////////////////////////////////
+// Radio
+////////////////////////////////
+
+.list-radio{
+  @extend %label-set;
+  label{
+    &:before{
+      box-sizing: border-box;
+      height: 20px;
+      width: 20px;
+      margin-top: -10px;
+      border: 2px solid #BBB;
+      border-radius: 50%;
+    }
+    &:after{
+      box-sizing: border-box;
+      height: 12px;
+      width: 12px;
+      left: 14px;
+      opacity: 0;
+      border-radius: 50%;
+      opacity: 0;
+      background-color: $color-primary;
+      margin-top: -6px;
+    }
+  }
+  input[type="radio"]{
+    position: absolute;
+    left: -9999px;
+    &:checked{
+      & + label{
+        background-color: #EFEFEF;
+        @include media(sp){
+          background-color: #FFEFBF;
+        }
+        &:after{
+          box-sizing: border-box;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.form-table{
+  width: 100%;
+  tr{
+    @include media(pc){
+      border-top: 1px solid #DDD;
+      border-bottom: 1px solid #DDD;
+    }
+  }
+  th,td{
+    padding: 12px;
+    vertical-align: top;
+    @include media(sp){
+      display: block;
+    }
+  }
+  th{
+    text-align: left;
+    @include media(pc){
+      padding-top: 12px + 10px;
+      width: 17em;
+      background-color: #EFEFEF;
+    }
+    @include media(sp){
+      background-color: #EFEFEF;
+    }
+  }
+  td{
+    @include media(sp){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+}
+
+
+.form-footer{
+  margin-top: 1.5em;
+  text-align: center;
+}

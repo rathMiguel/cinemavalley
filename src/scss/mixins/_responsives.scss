@@ -1,0 +1,45 @@
+//flex-image
+@mixin flex-img{
+  max-width: 100%;
+  height: auto;
+}
+
+//flex-video
+@mixin flex-video{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 100%;
+  overflow: hidden;
+  iframe,object,embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// google map with responsive
+@mixin flex-gmap{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    iframe,object,embed{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }
+}
+
+//header fixed
+@mixin header-fixed{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  background:#FFF;
+}

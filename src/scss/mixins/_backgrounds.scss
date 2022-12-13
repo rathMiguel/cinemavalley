@@ -1,0 +1,31 @@
+
+//background image full-wide
+@mixin bg-full($bg-name, $x:center, $y:center){
+	background: url('#{$bg-name}') $x $y no-repeat;
+	background-size: cover;
+}
+
+//background img with hiding text
+@mixin bg-image($txbg){
+	display: inline-block;
+	background: url($txbg) 0 0 no-repeat;
+	background-size: contain;
+	width: image-width($txbg);
+	height: image-height($txbg);
+}
+
+//background img treat as a list-icon
+@mixin bg-list($list-icon,$icon-gap:5px){
+	background: url($list-icon) left center no-repeat!important;
+	padding-left: image-width($list-icon) + $icon-gap;
+}
+
+// gradient
+@mixin gradient($color-start, $color-end, $orientation: vertical, $ratio :100%){
+	@include filter-gradient($color-start, $color-end, $orientation);
+	@if($orientation == vertical){
+		@include background-image(linear-gradient(top,  $color-start, $color-end $ratio));
+	} @else {
+		@include background-image(linear-gradient(left,  $color-start, $color-end $ratio));
+	}
+}

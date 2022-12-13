@@ -1,0 +1,19 @@
+- var wppath = '<?php echo esc_url(get_template_directory_uri());?>';
+- var wppath = '';
+header#header
+  .container
+    .header-logo
+      h1
+        img(src=depth + "img/footer_logo.png", alt="森のスープ屋の夜").image-header-logo
+        span.header-text 一組限定の宿
+    .header-toggle
+      i.js-nav-toggle: img(src=depth + "img/bar_menu.png", alt="")
+    nav#nav
+      i.nav-close.js-nav-close: img(src!=wppath + "/img/icon_close.png", alt="閉じる")
+      ul.list-nav
+        li.link-nav-intro: a(href="#intro") ようこそ
+        li.link-nav-map: a(href="#map") 森のお散歩map
+        li.link-nav-year: a(href="#year") 森のいちねん
+        li.link-nav-message: a(href="#outro") 森との出会い＆建築士のメッセージ
+        li.link-nav-access: a(href="#access") アクセス
+        li.link-nav-reservation: a(href="reservation/") 宿泊予約はこちら

@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+html.home,
+body.home{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+
+	&.is-loaded-go{
+		overflow: visible;
+	}
+}
+
+body {
+	font-family:$ja_min;
+	font-size:$fz-default;
+	color: #FFF;
+	background-image: url('../img/bg_page.png');
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-size: 16px;
+	line-height: 2;
+	@include media(sp){
+		font-size: 13px;
+	}
+}
+
+a{
+	text-decoration: underline;
+	outline: none;
+	color: $color-link;
+	transition: all 0.35s ease 0.05s;
+	&:hover{
+		text-decoration: none;
+		opacity: 0.8;
+	}
+}
+
+p{
+	margin-bottom: $line-height + em;
+}
+
+main{
+	overflow: hidden;
+	display: block;
+}
+
+strong{
+	font-weight: 700;
+}
+
+div, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  box-sizing: border-box;
+}
+
+img{
+	vertical-align: middle;
+}

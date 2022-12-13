@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.table{
+	margin-bottom: 1.5em;
+	width: 100%;
+	@include media(sp){
+		margin-bottom: 0.8em;
+	}
+	th{
+		text-align: left;
+	}
+	th,td{
+		padding: 12px;
+		vertical-align: top;
+	}
+}

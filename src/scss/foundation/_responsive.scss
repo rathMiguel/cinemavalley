@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+img{
+	@include flex-img;
+}
+
+.flex-gmap,
+.flex-video{
+	@include flex-gmap;
+}

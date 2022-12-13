@@ -1,0 +1,13 @@
+//font mix
+@mixin font-set($fs,$fc,$fw){
+    font-size:$fs;
+    color:$fc;
+    font-weight: $fw;
+}
+
+//hiding text
+@mixin hide-text{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}

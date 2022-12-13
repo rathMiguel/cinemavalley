@@ -1,0 +1,7 @@
+if general.useMinJs
+  script(src=depth + path.js + "script.min.js")
+else
+  script(src=depth + path.js + "vendor.js")
+  script(src=depth + path.js + "script.js")
+if general.enableGoogleAnalytics
+  include _analytics

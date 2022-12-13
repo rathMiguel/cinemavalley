@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.link{
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.tel,
+.link-tel,
+.button-tel{
+  @include media(pc){
+    pointer-events: none;
+    cursor: text;
+  }
+}
+
+.link-tel{
+  color: #FFF;
+  text-decoration: none;
+  
+  &.large{
+    font-size: 22px;
+  }
+}

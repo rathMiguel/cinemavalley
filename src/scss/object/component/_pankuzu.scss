@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+// パンくずリスト
+//------------------------------------------------
+
+.area-pankuzu{
+	ul{
+		overflow: hidden;
+		li{
+			float: left;
+			&:not(:first-child){
+				&:before{
+					@include fa($fa-angle-right);
+					margin-left: 0.5em;
+					margin-right: 0.5em;
+				}
+			}
+		}
+	}
+}

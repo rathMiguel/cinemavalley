@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+.flex-container{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  @include media(pc){
+    width: $wide;
+  }
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-direction-column{
+  flex-direction: column;
+  @each $media in $medias {
+    &-#{$media}{
+      @include media(#{$media}){
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@for $i from 1 through 6 {
+  .flex-order-#{$i}{
+    order: $i;
+  }
+}
+
+@for $i from 1 through 6 {
+  @each $media in $medias {
+    @include media(#{$media}){
+      .flex-order-#{$i}-#{$media}{
+        order: $i;
+      }
+    }
+  }
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+  @each $media in $medias {
+    &-#{$media}{
+      @include media(#{$media}) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+.flex-justify-center{
+  justify-content: center;
+}
+
+.flex-justify-between{
+  justify-content: space-between;
+}
+
+.flex-justify-around{
+  justify-content: space-around;
+}
+
+@each $media in $medias {
+  @include media(#{$media}) {
+    .flex-justify-center-#{$media}{
+      justify-content: center;
+    }
+
+    .flex-justify-between-#{$media}{
+      justify-content: space-between;
+    }
+
+    .flex-justify-around-#{$media}{
+      justify-content: space-around;
+    }
+  }
+}
+
+.flex-align-center{
+  align-items: center;
+}
+
+.flex-align-start{
+  align-items: flex-start;
+}
+
+@each $media in $medias {
+  @include media(#{$media}) {
+    .flex-align-center-#{$media}{
+      align-items: center;
+    }
+
+    .flex-align-start-#{$media}{
+      align-items: flex-start;
+    }
+  }
+}

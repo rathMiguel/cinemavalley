@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// デバイスの毎の表示/非表示設定
+//------------------------------------------------
+.hide-all{display: none;}
+
+@each $media in $medias {
+  .hide-#{$media} {
+    @include media(#{$media}){
+      display: none;
+    }
+  }
+}
+
+// ディスプレイのプロパティ
+//------------------------------------------------
+.block{display: block;}
+.inline-block{display: inline-block;}
+
+// ポジションの設定
+//------------------------------------------------
+.por{ position: relative; }
+.poa{ position: absolute; }

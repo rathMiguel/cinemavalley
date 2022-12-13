@@ -1,0 +1,25 @@
+include /base/modules/_mixins
+block vars
+  - var depth       = '/';
+  - var title       = 'ページタイトル';
+  - var description = 'ページの説明';
+  - var keywords    = 'キーワード';
+  - var bodyId      = 'page';
+  - var bodyClass   = 'page_name';
+  - var css         = 'page_name.css';
+  - var dirName     = '/';
+doctype
+html(lang=general.lang)
+  head
+    include /modules/_head
+    block title
+      title=title
+  body(id=bodyId, class=bodyClass)
+    block header
+      include /modules/_header
+    main#main(role="main")
+      block content
+        h1 Hello Extends
+    block footer
+      include /modules/_footer
+    include /base/modules/_script

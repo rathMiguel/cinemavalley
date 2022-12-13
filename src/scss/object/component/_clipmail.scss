@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+//------------------------------------
+//フォームの設定
+//------------------------------------
+
+//ベースカラー
+$main-color: $color-primary;
+
+//フォームの外枠
+$form-outline: 5px solid lighten($color-primary,10%);
+
+//見出しの背景
+$heading-color: #EFEFEF;
+
+/////////////////////////////////
+// フォームレイアウト
+/////////////////////////////////
+
+.cm-wrapper{
+  margin-bottom: 50px;
+  .msg{
+    color: $color-error;
+    font-weight: 700;
+  }
+
+  h3{
+    background-color: $main-color;
+    color: #FFF;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 28px 0;
+    border-radius: 8px;
+    @include media(sp){
+      padding: 8px 12px;
+    }
+  }
+  
+  .cm-rows{
+    @include media(pc){
+      padding-left: 95px;
+      padding-right: 95px;
+    }
+  }
+}
+
+/////////////////////////////////
+// フォーム本文・項目表示
+/////////////////////////////////
+
+.cm-lead{
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.cm-dl{
+  @include media(sp){
+    margin-bottom: 25px;
+  }
+  dt {
+    background: $heading-color;
+    color: #111;
+    @include media(sp){
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+    @include media(pc){
+      margin-top: 20px;
+      margin-bottom: 15px;
+      padding: 10px 15px;
+    }
+  }
+  dd{
+    @include media(sp){
+      padding-left: 8px;
+      margin-bottom: 8px;
+    }
+    @include media(pc){
+      margin-bottom: 10px;
+      margin-left: 15px;
+    }
+  }
+}
+
+/////////////////////////////////
+// フォーム用ボタン
+/////////////////////////////////
+
+.cm-button{
+  background-color: $main-color;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-family: inherit;
+  box-sizing:border-box;
+  padding: 15px 45px;
+  cursor: pointer;
+  border-radius: 5px;
+  @include media(pc){
+    margin: 1em;
+    font-size: 16px;
+  }
+  &:hover{
+    background-color: lighten($main-color,5);
+  }
+  @include media(sp){
+    width: 90%;
+    padding: 15px;
+  }
+  &.button-large{
+    padding: 25px 65px;
+    background-color: #B20000;
+    font-size: 20px;
+    &:hover{
+      background-color: lighten(#B20000,5);
+    }
+  }
+  &.button-medium{
+    @include media(sp){
+      width: 75%;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+/////////////////////////////////
+// フォーム用フッター
+/////////////////////////////////
+
+.cm-list-bottom{
+  overflow: hidden;
+  @include media(pc){
+    margin: 20px 0;
+  }
+  li{
+    @include media(sp){
+      margin: 12px 0;
+      text-align: center;
+    }
+  }
+  .cm-item-main{
+    @include media(pc){
+      float: right;
+      width: 50%;
+    }
+  }
+  .cm-item-sub{
+    @include media(pc){
+      float: left;
+      width: 50%;
+      padding-top: 17px;
+      text-align: right;
+    }
+  }
+  .fa-angle-double-right{
+    margin-left: 0.5em;
+  }
+  .fa-angle-double-left{
+    margin-right: 0.5em;
+  }
+}
+
+.area-confirm{
+  &.error{
+    text-align: center;
+  }
+  &.submit{
+    text-align: center;
+    @include media(pc){
+      margin: 45px 0;
+    }
+    button{
+      margin: 0;
+    }
+  }
+}

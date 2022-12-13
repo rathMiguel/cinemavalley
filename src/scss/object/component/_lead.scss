@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+// テキストのクラス
+//------------------------------------------------
+
+.lead{
+	font-size: 1.2em;
+	line-height: 1.25;
+	margin-bottom: 10px;
+  @include media(sp){
+    margin-bottom: 5px;
+  }
+}
+
+.text-required{
+	color: $color-error;
+}

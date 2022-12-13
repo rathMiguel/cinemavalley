@@ -1,0 +1,234 @@
+- var wppath = '';
+- var wppath = '<?php echo esc_url(get_template_directory_uri());?>';
+#modal-base
+.area-hero
+  .hero-wrapper
+    .container.position-relative
+      .block-hero-first: img(src!=wppath + "/img/hero_text1.png", alt="森のスープ屋の夜 2019.10.14 open")
+      .block-hero-second: img(src!=wppath + "/img/hero_text2.png", alt="旅へ　目的地は私の中にある静かな場所　とてもあたたかくて　まあるいところ。")
+    .hero-light: img(src!=wppath + "/img/house_light.png", alt="")
+section.area-intro.inview.fadeup-intro1#intro
+  .container.margin-sp.position-relative.bg-intro
+    .intro-header.fadeup-intro2
+      h2.title.intro-title: img(src!=wppath + "/img/intro_text.png", alt="ようこそ　森のスープ屋の夜へ").image-intro
+    .intro-main.fadeup-intro3
+      p ここは森の休憩所。<br>ふかふかの森と質素な小屋と。<br>まずはお風呂にしませんか。
+      p 心と体を洗うクロモジの湯。<br>いつもがんばる体に ありがとう を。<br>夕暮れのころ森いっぱいに香るのは 今夜のスープ。
+      p いただきます は、いのちを頂く大切な時間。<br>ゆっくりゆっくりどうぞ。
+      p 蝋燭のゆらぎと薪ストーブの温もりにほどけてゆく夜。<br>今夜は新月。真夜中の森に出かけてみませんか。
+      p 旅へ 目的地は、私の中にある静かな場所。<br>とてもあたたかくてまあるいところ。
+section.area-map.inview.fadeup-map1#map
+  .map-block.fadeup-map2
+    .map-header
+      h2: img(src!=wppath + "/img/map_text.png", alt="森のお散布map").image-map
+    ul.map-list.fadeup-map3
+      li: span.js-modal.link-map.link-map_meditation(data-id="meditation") 木々と瞑想室
+      li: span.js-modal.link-map.link-map_garden(data-id="garden") 森の薬草園
+      li: span.link-map.link-map_ruhe.text-disabled 小さなお店<br>Ruhe
+      li: span.js-modal.link-map.link-map_rest(data-id="rest") 森の休憩室<br>(客室)
+      li: span.js-modal.link-map.link-map_soup(data-id="soup") 森のスープ屋
+      li: span.js-modal.link-map.link-map_bath(data-id="bath") 心と体を洗う<br>黒文字風呂
+  .tac
+    p MAPをクリックすると、詳しい情報を見ることができます。
+.modal-content#meditation
+  .modal-flex
+    i.js-modal-close: img(src!=wppath + "/img/icon_close.png", alt="閉じる")
+    .modal-block
+      .modal-block_header
+        h2.mb40: img(src!=wppath + "/img/meditation_text.png", alt="木々と瞑想室")
+      .modal-block_content
+        .modal-block_gallery
+          .js-slider-gallery
+            .slick-slide: img(src!=wppath + "/img/medical_01.jpg", alt="")
+        .tac
+          p 森の一番奥は<br>木々が身を寄せ合い作ってくれた瞑想室。<br>朝日を浴びて。<br>深呼吸、深呼吸。<br>私のいのちを五感で感じてみる。
+.modal-content#garden
+  .modal-flex
+    i.js-modal-close: img(src!=wppath + "/img/icon_close.png", alt="閉じる")
+    .modal-block
+      .modal-block_header
+        h2.mb40: img(src!=wppath + "/img/herb_text.png", alt="森の薬草室")
+      .modal-block_content
+        .modal-block_gallery
+          .js-slider-gallery
+            .slick-slide: img(src!=wppath + "/img/mediherb_01.jpg", alt="")
+            .slick-slide: img(src!=wppath + "/img/mediherb_02.jpg", alt="")
+            .slick-slide: img(src!=wppath + "/img/mediherb_03.jpg", alt="")
+        .tac
+          p 日本みつばちや黒文字の木など。<br>さまざまな生きものと暮らす森。<br>森からの贈りもの 「はちみつや薬草」を<br>お宿では少しづつおすそ分けさせていただきます。
+.modal-content#rest
+  .modal-flex
+    i.js-modal-close: img(src!=wppath + "/img/icon_close.png", alt="閉じる")
+    .modal-block
+      .modal-block_header
+        h2.mb40: img(src!=wppath + "/img/restroom_text.png", alt="森の休憩室")
+      .modal-block_gallery
+        .js-slider-gallery
+          .slick-slide: img(src!=wppath + "/img/room_01.jpg", alt="")
+          .slick-slide: img(src!=wppath + "/img/room_02.jpg", alt="")
+          .slick-slide: img(src!=wppath + "/img/room_03.jpg", alt="")
+      .modal-block_content
+        p 長い夜を過ごすのは、谷を臨む質素な小屋。<br>深まりゆく夜の森の様子を感じながら、心おだやかに過ごす時間。<br>いつもより少しだけ静かな灯りでどうぞゆったりとお過ごし下さい。<br>温かなクロモジのお茶を一杯いかがですか。
+        p 小さな屋根裏にはお日さまの香りがするお布団。小窓から差し込む朝の光と野鳥の唄声が深い眠りから起こしてくれるでしょう。
+        hr.line
+        h3.title-semi-medium 客室タイプ
+        .ml20
+          p.mb10 宿泊小屋(1Fフロア、屋根裏寝室、デッキ)、お風呂小屋
+          .ml20
+            ul
+              li: small.small ※お身体の不自由な方はご相談下さい。
+              li: small.small 1Fにお布団を準備させて頂きます。
+        hr.line
+        dl.dl-table
+          dt.pr20 広さ
+          dd 19.6㎡
+        hr.line
+        dl.dl-table
+          dt.pr20 定員
+          dd 2名
+        hr.line
+        h3.title-semi-medium 客室備品
+        p.mb0 お布団（伯州綿）、ルームウェア、羽織りもの（大山の羊毛）、タオル、薪ストーブ
+        hr.line
+        h3.title-semi-medium アメニティ
+        .ml20
+          ul
+            li クロモジ蒸留水
+            li 歯ブラシ
+        hr.line
+        p: small ※テレビや冷蔵庫、Wi-Fiはありません。<br>備品やアメニティは大山とその周辺に暮らす作り手によるハンドメイドです。
+.modal-content#bath
+  .modal-flex
+    i.js-modal-close: img(src!=wppath + "/img/icon_close.png", alt="閉じる")
+    .modal-block
+      .modal-block_header
+        h2.mb10: img(src!=wppath + "/img/bath_text.png", alt="心と体を洗う　黒文字風呂")
+      .modal-block_gallery
+        .js-slider-gallery
+          .slick-slide: img(src!=wppath + "/img/bath_01.jpg", alt="")
+          .slick-slide: img(src!=wppath + "/img/bath_02.jpg", alt="")
+      .modal-block_content.tac-pc.pt40-pc
+        p この森には野生の黒文字の木が多く暮らしています。<br>和製ハーブ 黒文字の枝は生薬ウショウとも呼ばれその優しい香りと成分が深い癒しをもたらしてくれます。<br>春の芽吹きと黄色いお花、夏の青々とした葉、秋の熟成した枝葉、冬の静けさと裸木。<br>植物の持つエネルギーが心と体に優しく働きかけます。
+        p 清らかなわたしに触れる静かな時間を。
+.modal-content#soup
+  .modal-flex
+    i.js-modal-close: img(src!=wppath + "/img/icon_close.png", alt="閉じる")
+    .modal-block
+      .modal-block_header
+        h2.mb40: img(src!=wppath + "/img/gallery_text.png", alt="")
+      .modal-block_gallery
+        .js-slider-gallery
+          .slick-slide: img(src!=wppath + "/img/soup_01.jpg", alt="")
+          .slick-slide: img(src!=wppath + "/img/soup_02.jpg", alt="")
+          .slick-slide: img(src!=wppath + "/img/soup_03.jpg", alt="")
+      .modal-block_content.tac-pc.pt30-pc
+        p 夕食/安らぎの月夜のコース料理<br>朝食/おひさまと作るスープとパン
+        p 大山の黒土で育った無農薬のお野菜をたっぷり使ったお料理。
+        p 今、畑にあるものをいただきます。
+        p ほんの少しだけお野菜と秘密の会話をしたら、あとはコトコト、レシピはありません。
+        p メインは、スープ。
+        p 大切な体にお迎えする食材は、エナジーたっぷりのものを選んでいます。
+        p 味付けはシンプルに塩、味噌、醤油、薬草やスパイス少し。
+        p 心も体もうれしいお食事の時間をどうぞお楽しみ下さい。
+section.area-year#year
+  .slider-year-sp
+    .year-block.slider-year_item.header.inview.fadeup-year1
+      .container.position-relative
+        .year-header
+          h2.title: img(src!=wppath + "/img/year_text1.png", alt="森のいちねん").image-year
+        .year-bg.blend-multiply
+    .year-block.slider-year_item.season.spring.inview.fadeup-year2
+      .container.position-relative
+        .season-block.spring
+          h3.title-season: img(src!=wppath + "/img/year_text2.png", alt="春")
+          .tac-sp
+            p 草木の芽吹きにこころ弾む春。<br>土のベッドに転がり夕日を浴びる。<br>呼吸を深く。
+            p 眠りの木に寄り添うやわらかな夜。
+    .year-block.slider-year_item.season.summer.inview.fadeup-year3
+      .container.position-relative
+        .season-block.summer
+          h3.title-season: img(src!=wppath + "/img/year_text3.png", alt="夏")
+          .tac-sp
+            p お月さまを待つ頃<br>森いっぱいに響きわたるのは<br>ヒグラシの唄声。
+            p 優しい風が心を撫でる星降る夜。
+    .year-block.slider-year_item.season.autumn.inview.fadeup-year4
+      .container.position-relative
+        .season-block.autumn
+          h3.title-season: img(src!=wppath + "/img/year_text4.png", alt="秋")
+          .tac-sp
+            p 夕暮れの頃<br>赤く染まる落ち葉のじゅうたん。
+            p 夜空からの贈りものは、<br>一日の疲れを癒す月灯りと<br>長い夜の時間。
+    .year-block.slider-year_item.season.winter.inview.fadeup-year5
+      .container.position-relative
+        .season-block.winter
+          h3.title-season: img(src!=wppath + "/img/year_text5.png", alt="冬")
+          .tac-sp
+            p 寒い冬は想いを温めるとき。<br>ストーブに火を入れて<br>ゆらゆら私と過ごす夜。
+            p 白い世界で見つけた色鮮やかもの。<br>私の中に映し出されたのは<br>真っ赤な林檎。
+.area-other.inview.fadeup-other1#outro
+  .container
+    ul.other-list
+      li
+        span.js-modal.link-other.link-map_story.text-disabled(data-id="story")
+          span.link-other-image.image-story: img(src!=wppath + "/img/other_apple.png", alt="")
+          span.block 森との出会い
+          span.text-en Story
+      li
+        span.js-modal.link-other.link-map_message(data-id="message")
+          span.link-other-image.image-message: img(src!=wppath + "/img/other_message.png", alt="")
+          span.block 建築士のメッセージ
+          span.text-en Message
+      li.li-full
+        a.link-other(style="text-decoration:none;" href="https://note.com/soupyoru" target="_blank")
+          span.block 森とスープと絵本のおはなし
+          span.text-en Talk
+
+.modal-content#story
+  .modal-flex
+    i.js-modal-close: img(src!=wppath + "/img/icon_close.png", alt="閉じる")
+    .modal-block
+      .modal-block_header
+        img(src!=wppath + "/img/story_badge.png", alt="").image-story_badge
+        h3.title-medium.title-story: img(src!=wppath + "/img/story_text.png", alt="森との出会い")
+      .modal-block_content
+        p 鳥取県 大山。<br>雪降る日に谷を臨む小さな森に出会いました。<br>ゆっくり歩くその足は止まり、「ここだ」と感じました。<br>森の中央 スープ屋の建つ場所です。<br>一瞬寒さを忘れて炎の揺らぎと温もりを感じたのを 今でも思い出します。<br>この場所を 「うれしい」を映し出す（cinema）、谷（valley） シネマバレイと名付けました。
+        p 原点は20年前、遥か海の向こう、旅の途中で出逢った小さなホスピス。<br>国籍や宗教関係無く人々が共に時間を過ごす平和な場所がそこにありました。<br>ホスピスの始まりは中世ヨーロッパの修道院と言われています。 旅人の疲れを癒す休憩所です。<br>初めて出逢ったその時に「これだ」と感じたものはカタチを変えて 森のスープ屋になりました。<br>この森に訪れただけで心穏やかになるような、 そんな静かな空間を木々たちと一緒に育ててゆきます。
+.modal-content#message
+  .modal-flex
+    i.js-modal-close: img(src!=wppath + "/img/icon_close.png", alt="閉じる")
+    .modal-block
+      .modal-block_header
+        img(src!=wppath + "/img/message_badge.png", alt="").image-message_badge
+        h3.title-medium 建築士のメッセージ
+      .modal-block_content
+        p ゆるやかな坂道を下って行ったその先に、この森は広がっている。<br>コナラやクロモジをはじめいろんな木々が伸びやかに生えるこの土地自体も、<br>向こう側へとゆるやかに下っている。<br>その周縁は崖になっているが、生い茂る草木にはばまれて眼下は見通せない。<br>耳をすませば聞こえてくるほんのかすかな水音が<br>見えない谷の気配を伝え、その深さをかきたててくれる。
+        p 勾配のある土地には、ちょっと歩きたくなる魅力がある。<br>見上げたり、見下ろしたり、角度によって変化のある景色がある。<br>落ち葉や枯れ枝が敷きつめられた地面は、歩くとちょっとふんわりしている。<br>ふと見通せば、木々が織りなす光と陰で場に明暗が息づいている。<br>それが自然と歩む道を、腰を下ろしたくなる居場所を導いてくれるような気がする。
+        p 決して広大な土地でもなく、<br>大きな景色に開かれているわけでもないけれど、<br>どこかおだやかで親しみと奥行きのある小さな森…。
+        p この森の手前、中ほどにこの小屋は横たわっている。<br>木々の間を縫うように、森をくぐり抜けてアプローチ。<br>切妻屋根がかかった細長い木箱のような建物が静かに谷の方に向いて構えている。<br>小屋の中に入ると粗削りの板を張った空間に包まれる。<br>そこに開かれた窓から外を眺めると、新たな視点で新たな森と出会う。<br>そして、あらためてこの森に包まれていることを知る。
+        p やがて時を経て古びつつも、<br>日々刻々と移ろいゆくこの森の季節や時間を変わらず映し出してくれる…<br>そんなかけがえのない建築、人の居場所であればよいと思う。
+        p 建築設計／　遠藤宏（しらいし設計室）
+.area-social.inview.fadeup-social1
+  .container
+    ul.list-social
+      li: a(href="https://www.facebook.com/cinemavalley5/?fref=ts" target="_blank"): img(src!=wppath + "/img/icon_facebook.png", alt="Facebook")
+      li: a(href="https://www.instagram.com/soupyanoyoru/?igshid=14rq9gdi5ahid&fbclid=IwAR39NKsXMm0SRUvCURy3gSeayJY2K9dkClXVSotx_kn-L4L5fpj0Up5GqU0" target="_blank"): img(src!=wppath + "/img/icon_instagram.png", alt="Instagram")
+.area-cta.inview.fadeup-cta1
+  .container.margin-sp
+    ul.list-cta
+      li.cta-full.cta-bottom.js-cta-bottom
+        a(href="reservation/").button.button-reserve 宿泊予約はこちら
+          span.text-en Reservation
+      li
+        a(href="https://soupyabooks.base.shop/?fbclid=IwAR2QC_PnbsAgNO6z2VRRiaDkcWD0otyi0yiI0aTIbreyKBQq5OLbzJXIW_c" target="_blank").button.button-primary
+          span.button-in-external
+            img(src!=wppath + "/img/logo_soupya_books.png", alt="soupya books")
+            small.block-sp.hide-pc スープ屋の絵本
+      li
+        span.button.button-primary
+          span.button-in-external
+            img(src!=wppath + "/img/logo_ruhe.png", alt="soupya books")
+            small.block-sp.hide-pc オリジナルブランド
+.area-gmap.inview.fadeup-map1#access
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.239178762925!2d133.46695471491114!3d35.374523417784694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3556f53b9dba3295%3A0x69026627c4d5cb46!2z5qOu44Gu44K544O844OX5bGLY2luZW1hVmFsbGV5!5e0!3m2!1sja!2sjp!4v1552822556237" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+.gmap-footer
+  a(href="access/").button.button-primary くわしいアクセス情報はこちら

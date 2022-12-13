@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@include media(sp){
+  @for $i from 1 through 355 {
+    .size#{$i}-sp {
+      width:$i * 1px;
+    }
+  }
+}

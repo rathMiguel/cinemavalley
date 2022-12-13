@@ -1,0 +1,146 @@
+#===============================
+# 基本設定
+#===============================
+# タイトル、URLなど
+general:
+  encode:                'UTF-8'
+  lang:                  'ja'
+  title:                 &title '森のスープ屋の夜 | 一組限定の宿'
+  pageTitle:             '森のスープ屋の夜'
+  description:           &description 'サイトの説明、概要'
+  user:                  &user '作者名'
+  url:                   &url 'http://example.com/'
+  version:               &version 1.0
+  debug:                 false
+  develop:               true
+  norobots:              false
+  minify:                false
+  useMinJs:              false
+  useMinCss:             false
+  viewportContent:       'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes'
+  formatDetection:       true
+  ogp:                   false
+  ogType:                'website'
+  ogImage:               '/images/common/ogp.jpg'
+  twitterCard:           false
+  twitterUser:           ''
+  enableGoogleAnalytics: false
+  trackingCode:          'GTM-XXXXXXX'
+  ext:                   '.php'
+
+# ファイルパス
+path:
+  # 各ステージのパス（頭に./, 末尾に/）
+  input:      './src/'
+  output:     './dev/'
+  release:    './public/'
+  www:        './www/app/public/'
+  styleguide: './styleguide/'
+  img:        './misc/'
+  fonts:      './fonts/'
+
+  # 各主要ファイルのパス（末尾のみ/）
+  css:     'css/'
+  js:      'js/'
+  misc:    'misc/'
+  cgi:     'cgi-bin/'
+  # theme:   ''
+  theme:   'wp-content/themes/cinemavalley/'
+
+  # BrowserSyncのパス設定
+  start:   '/'
+  proxy:   'http://cinemavalley.local/'
+
+# 画像のパス
+image:
+  main:    'view/'
+  favicon: 'logo.fw.png'
+  ogp:     'ogp/'
+  fonts:   'fonts/'
+
+# CSSの設定
+css:
+  main: 'style.scss'
+
+# プレフィックス付与対象のブラウザ
+prefix:
+  - 'ie >= 11'
+  - 'ie_mob >= 11'
+  - 'ff >= 30'
+  - 'chrome >= 34'
+  - 'safari >= 7'
+  - 'opera >= 23'
+  - 'ios >= 7'
+  - 'android >= 4.4'
+  - 'bb >= 10'
+
+# 使用するスクリプトのモジュール
+# （指定順にscript.jsに格納される）
+coffee:
+  modules:
+    - ua
+    # - form_select
+    # - form_validate
+    - smooth
+    # - totop
+    - viewport
+    # - v_path
+    # - social
+    # - test
+
+# スキャフォールディングの設定
+scaffold:
+  page:
+    # - page
+  sass:
+    # - top
+    # - page
+  blog:
+    # - blog
+
+  # Clipmail
+  clipmail:
+    # - 'contact'
+
+  # WordPress
+  wordpress:
+    # - 'blog'
+
+signature: |-
+  ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+  会社名
+  〒000-0000 住所
+
+  TEL:0857-00-0000 FAX:0857-00-0000
+  ホームページ：http://
+  ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+#===============================
+# ファビコンの設定
+#===============================
+favicon:
+  enable:         false
+  appName:        *title
+  appDescription: *description
+  developerName:  *user
+  developerURL:   *url
+  background:     '#FFF'
+  path:           'favicons/'
+  url:            *url
+  display:        'standalone'
+  orientation:    'portrait'
+  icons:
+    android:      true
+    appleIcon:    true
+    appleStartup: false
+    coast:        false
+    favicons:     true
+    firefox:      true
+    opengraph:    false
+    twitter:      false
+    windows:      true
+    yandex:       false
+  version:        *version
+  logging:        false
+  online:         false
+  replace:        false

@@ -1,0 +1,16 @@
+.sass-cache/
+node_modules/
+
+bower_components/
+
+Thumbs.db
+ftpconfig.yml
+*.LCK
+*.map
+
+.vagrant
+.DS_STORE
+
+_notes/
+www/
+dev/
