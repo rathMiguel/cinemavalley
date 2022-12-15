@@ -1245,7 +1245,12 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: -62px;
+  top: -137px;
+}
+@media print, screen and (min-width: 768px) {
+  .sound-wrapper {
+    top: -95px;
+  }
 }
 
 .sound-button {
@@ -1255,6 +1260,11 @@ textarea {
 }
 .sound-button img {
   width: 69px;
+}
+@media print, screen and (min-width: 768px) {
+  .sound-button img {
+    width: 103px;
+  }
 }
 
 #test-modal {

@@ -16,7 +16,10 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: -62px;
+  top: -62px - 75px;
+  @include media(pc){
+    top: -95px;
+  }
 }
 
 .sound-button{
@@ -25,5 +28,8 @@
   display: inline-block;
   img{
     width: 69px;
+    @include media(pc){
+      width: 103px;
+    }
   }
 }
