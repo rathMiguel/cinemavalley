@@ -5,7 +5,6 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 
 const wpTheme = 'cinemavalley'
-const wpHost  = 'http://cinemavalley.local/'
 
 const buildDefault = {
   mode: 'development',
@@ -40,7 +39,7 @@ const buildDefault = {
       host: 'localhost',
       port: 3000,
       open: false,
-      proxy: wpHost
+      proxy: 'http://cinemavalley.local'
     }),
     new CopyPlugin({
       patterns: [

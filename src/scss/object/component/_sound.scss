@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.sound{
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+  height: 0;
+}
+
+.sound-wrapper{
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -62px;
+}
+
+.sound-button{
+  cursor: pointer;
+  float: right;
+  display: inline-block;
+  img{
+    width: 69px;
+  }
+}

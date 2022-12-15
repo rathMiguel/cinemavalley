@@ -90,9 +90,6 @@ jQuery(function($) {
       slider = $('.js-slider-gallery').slick({
         autoplay: true,
         arrows: true,
-        // dots: true
-        // slidesToShow: 1
-        // centerMode: true
         infinite: true,
         variableWidth: true,
         fade: true,

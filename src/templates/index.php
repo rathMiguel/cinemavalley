@@ -13,8 +13,9 @@
   <body <?php body_class() ?> id="home">
     <?php get_header() ?>
     <main id="main" role="main">
-      <?php get_template_part('parts', 'home') ?>
+      <?php get_template_part('components/home') ?>
     </main>
     <?php get_footer() ?>
+    <?php get_template_part('components/sound') ?>
   </body>
 </html>

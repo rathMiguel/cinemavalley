@@ -1,4 +1,3 @@
-
 <div id="modal-base"></div>
 <div class="area-hero">
   <div class="hero-wrapper">
@@ -31,7 +30,7 @@
     <ul class="map-list fadeup-map3">
       <li><span class="js-modal link-map link-map_meditation" data-id="meditation">木々と瞑想室</span></li>
       <li><span class="js-modal link-map link-map_garden" data-id="garden">森の薬草園</span></li>
-      <li><span class="link-map link-map_ruhe text-disabled">小さなお店<br>Ruhe</span></li>
+      <li><span class="link-map link-map_ruhe"><a href="https://soupya.stores.jp/" target="_blank" class="text-link">小さなお店</a></span></li>
       <li><span class="js-modal link-map link-map_rest" data-id="rest">森の休憩室<br>(客室)</span></li>
       <li><span class="js-modal link-map link-map_soup" data-id="soup">森のスープ屋</span></li>
       <li><span class="js-modal link-map link-map_bath" data-id="bath">心と体を洗う<br>黒文字風呂</span></li>
@@ -270,7 +269,7 @@
         <p>決して広大な土地でもなく、<br>大きな景色に開かれているわけでもないけれど、<br>どこかおだやかで親しみと奥行きのある小さな森…。</p>
         <p>この森の手前、中ほどにこの小屋は横たわっている。<br>木々の間を縫うように、森をくぐり抜けてアプローチ。<br>切妻屋根がかかった細長い木箱のような建物が静かに谷の方に向いて構えている。<br>小屋の中に入ると粗削りの板を張った空間に包まれる。<br>そこに開かれた窓から外を眺めると、新たな視点で新たな森と出会う。<br>そして、あらためてこの森に包まれていることを知る。</p>
         <p>やがて時を経て古びつつも、<br>日々刻々と移ろいゆくこの森の季節や時間を変わらず映し出してくれる…<br>そんなかけがえのない建築、人の居場所であればよいと思う。</p>
-        <p>建築設計／　遠藤宏（しらいし設計室）</p>
+        <p>建築設計／　遠藤宏</p>
       </div>
     </div>
   </div>
@@ -287,8 +286,7 @@
   <div class="container margin-sp">
     <ul class="list-cta">
       <li class="cta-full cta-bottom js-cta-bottom"><a class="button button-reserve" href="reservation/">宿泊予約はこちら<span class="text-en">Reservation</span></a></li>
-      <li><a class="button button-primary" href="https://soupyabooks.base.shop/?fbclid=IwAR2QC_PnbsAgNO6z2VRRiaDkcWD0otyi0yiI0aTIbreyKBQq5OLbzJXIW_c" target="_blank"><span class="button-in-external"><img src="<?php echo esc_url(get_template_directory_uri());?>/img/logo_soupya_books.png" alt="soupya books"/><small class="block-sp hide-pc">スープ屋の絵本</small></span></a></li>
-      <li><span class="button button-primary"><span class="button-in-external"><img src="<?php echo esc_url(get_template_directory_uri());?>/img/logo_ruhe.png" alt="soupya books"/><small class="block-sp hide-pc">オリジナルブランド</small></span></span></li>
+      <li class="cta-full"><a class="button button-reserve" href="https://soupya.stores.jp/" target="_blank"><span class="text-en">online shop</span></a></li>
     </ul>
   </div>
 </div>
