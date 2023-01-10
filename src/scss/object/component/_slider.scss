@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+@use "../../mixins/mixins" as *;
+@use "../../setting/settings" as *;
+
 .slider-year-sp{
   .slick-arrow {
     z-index: 200;

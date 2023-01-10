@@ -1,7 +1,9 @@
 @charset "utf-8";
 
-// メディアクエリの設定
-//------------------------------------------------
+@use "sass:map";
+@use "sass:math";
+@forward "../setting/settings";
+@use "../setting/settings" as *;
 
 @mixin media($media) {
   @if not map-has-key($media-types, $media) {

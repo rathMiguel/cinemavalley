@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-//トップへ戻る
-//------------------------------------------------
+@use "../../mixins/mixins" as *;
+@use "../../setting/settings" as *;
 
 #totop{
   text-align: center;

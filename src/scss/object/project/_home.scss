@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+@use "../../mixins/mixins" as *;
+@use "../../setting/settings" as *;
+@use "sass:math";
+
 #home{
   background-image: url('../img/cv_bg.png');
 }
@@ -141,7 +145,7 @@
     @include media(sp){
       width: 308px;
       left: 50%;
-      margin-left: -(308px / 2);
+      margin-left: math.div(308px, 2);
     }
   }
 

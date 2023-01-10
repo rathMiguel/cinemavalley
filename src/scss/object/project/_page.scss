@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+@use "../../mixins/mixins" as *;
+@use "../../setting/settings" as *;
+
 .area-pagetitle{
   .bg-pagetitle{
     background-image: url('../img/DM_bg.png');

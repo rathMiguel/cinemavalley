@@ -1,6 +1,7 @@
+@use "sass:math";
+
 // Font Awesome
 @import "../setting/_fa_variables";
-// @use "sass:math" as math;
 
 @mixin fa($icon){
 	font-family: FontAwesome;
@@ -15,8 +16,8 @@
 }
 
 @mixin icon-size($src, $w, $h, $ratio:1){
-    width: ($w / $ratio);
-    height: ($h / $ratio);
+    width: math.div($w, $ratio);
+    height: math.div($h, $ratio);
 }
 
 @mixin icon($src, $w, $h, $ratio:1){

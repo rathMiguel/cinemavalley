@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+@use "../../mixins/mixins" as *;
+@use "../../setting/settings" as *;
+
 .title{
 	line-height: 1.25;
 	margin-bottom: 10px;
