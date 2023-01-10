@@ -1,5 +1,6 @@
 import { resolve } from "path"
 import { defineConfig } from "vite"
+import { ViteEjsPlugin } from "vite-plugin-ejs"
 
 export default defineConfig({
   root: 'src/pages',
@@ -14,8 +15,17 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src', 'pages', 'index.html'),
-        access: resolve(__dirname, 'src', 'pages', 'access', 'index.html')
+        reservation: resolve(__dirname, 'src', 'pages', 'reservation', 'index.html'),
+        access: resolve(__dirname, 'src', 'pages', 'access', 'index.html'),
       }
     }
-  }
+  },
+  plugins: [
+    ViteEjsPlugin((viteConfig) => {
+      return {
+        siteUrl: "https://cinemavalley.net",
+        title: "森のスープ屋の夜"
+      }
+    })
+  ]
 })

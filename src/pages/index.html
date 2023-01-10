@@ -1,60 +1,17 @@
+<%
+ const pageMeta = {
+  path: '/',
+  title: '森のスープ屋の夜 - 一日一組限定の宿',
+  description: '絵本の世界がここにありました。鳥取県 大山。”森のスープ屋の夜 一日一組限定の宿”が2019年10月14日にオープン。迎えてくれたは質素な小屋とクロモジのお風呂、そして木々たち。山の夜で月と過ごす癒しの時間を。・・・旅へ・・・。'
+ }
+%>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="format-detection" content="telephone=no,address=no,email=no">
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <!-- <link rel="stylesheet" type="text/css" href="https://cinemavalley.net/wp-content/themes/cinemavalley/css/vendor.css"> -->
-  <!-- <link rel="stylesheet" type="text/css" href="https://cinemavalley.net/wp-content/themes/cinemavalley/css/style.css"> -->
-  <title>森のスープ屋の夜 - 一日一組限定の宿</title>
-  <meta name="description" content="絵本の世界がここにありました。鳥取県 大山。”森のスープ屋の夜 一日一組限定の宿”が2019年10月14日にオープン。迎えてくれたは質素な小屋とクロモジのお風呂、そして木々たち。山の夜で月と過ごす癒しの時間を。・・・旅へ・・・。" />
-  <meta name="robots" content="max-image-preview:large" />
-  <meta name="google-site-verification" content="fi5qby7qBcZeqNrIImlPxZgsedICHW-eFed0UuSpgKM" />
-  <link rel="canonical" href="https://cinemavalley.net/" />
-  <meta property="og:locale" content="ja_JP" />
-  <meta property="og:site_name" content="森のスープ屋の夜 - 一日一組限定の宿" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="森のスープ屋の夜 - 一日一組限定の宿" />
-  <meta property="og:description" content="絵本の世界がここにありました。鳥取県 大山。”森のスープ屋の夜 一日一組限定の宿”が2019年10月14日にオープン。迎えてくれたは質素な小屋とクロモジのお風呂、そして木々たち。山の夜で月と過ごす癒しの時間を。・・・旅へ・・・。" />
-  <meta property="og:url" content="https://cinemavalley.net/" />
-  <meta property="og:image" content="/img/soup_ogp-2.png" />
-  <meta property="og:image:secure_url" content="/img/soup_ogp-2.png" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="森のスープ屋の夜 - 一日一組限定の宿" />
-  <meta name="twitter:description" content="絵本の世界がここにありました。鳥取県 大山。”森のスープ屋の夜 一日一組限定の宿”が2019年10月14日にオープン。迎えてくれたは質素な小屋とクロモジのお風呂、そして木々たち。山の夜で月と過ごす癒しの時間を。・・・旅へ・・・。" />
-  <meta name="twitter:image" content="/img/soup_ogp-2.png" />
-  <meta name="google" content="nositelinkssearchbox" />
-  <script type="text/javascript">
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    			ga('create', "UA-137736742-1", 'auto');
-    			ga('send', 'pageview');
-  </script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <link rel="icon" href="/img/cropped-favicon-1-32x32.png" sizes="32x32" />
-  <link rel="icon" href="/img/cropped-favicon-1-192x192.png" sizes="192x192" />
-  <link rel="apple-touch-icon" href="/img/cropped-favicon-1-180x180.png" />
-  <meta name="msapplication-TileImage" content="/img/cropped-favicon-1-270x270.png" /> </head>
+  <%- include( '_meta.ejs', { meta: pageMeta }); %>
+</head>
 <body class="home blog" id="home">
-  <header id="header">
-    <div class="container">
-      <div class="header-logo">
-        <h1><img class="image-header-logo" src="https://cinemavalley.net/wp-content/themes/cinemavalley/img/footer_logo.png" alt="森のスープ屋の夜"><span class="header-text">お手当てのための宿</span></h1>
-      </div>
-      <div class="header-toggle"> <i class="js-nav-toggle"><img src="https://cinemavalley.net/wp-content/themes/cinemavalley/img/bar_menu.png" alt=""></i> </div>
-      <nav id="nav"> <i class="nav-close js-nav-close"><img src="https://cinemavalley.net/wp-content/themes/cinemavalley/img/icon_close.png" alt="閉じる"></i>
-        <ul class="list-nav">
-          <li class="link-nav-intro"><a href="#intro">ようこそ</a></li>
-          <li class="link-nav-map"><a href="#map">森のお散歩map</a></li>
-          <li class="link-nav-year"><a href="#year">森のいちねん</a></li>
-          <li class="link-nav-message"><a href="#outro">森との出会い＆建築士のメッセージ</a></li>
-          <li class="link-nav-access"><a href="https://soupya.stores.jp/" target="_blank">online shop</a></li>
-          <li class="link-nav-access"><a href="/access/">アクセス</a></li>
-          <li class="link-nav-reservation"><a href="/reservation/">宿泊予約はこちら</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <%- include( '_header.ejs' ); %>
   <main id="main" role="main">
     <div id="modal-base"></div>
     <div class="area-hero">
@@ -352,23 +309,8 @@
     <div class="gmap-footer"><a class="button button-primary" href="access/">くわしいアクセス情報はこちら</a></div>
   </main>
   <div id="totop"><a class="totop-item" href="#"><span class="totop-candle"><img src="https://cinemavalley.net/wp-content/themes/cinemavalley/img/candle.png" alt=""></span><span class="totop-candlelight"><img src="https://cinemavalley.net/wp-content/themes/cinemavalley/img/candle_light.png" alt=""></span></a></div>
-  <footer id="footer">
-    <div class="container margin-sp">
-      <div class="row">
-        <div class="footer-logo"><a href="https://cinemavalley.net/"><img class="image-footer-logo" src="https://cinemavalley.net/wp-content/themes/cinemavalley/img/footer_logo.png" alt="森のスープ屋の夜"><p><small>お手当てのための宿</small></p></a></div>
-        <div class="footer-address"> <address>
-          <ul>
-            <li>〒689-4103　鳥取県西伯郡伯耆町真野694-19</li>
-          </ul>
-        </address> お問い合わせはメールでお願いいたします。<br><a href="mailto:cinemavalley5@gmail.com" style="color: inherit">cinemavalley5@gmail.com</a>
-          <p><small>Copyright © 2019 cinemaValley All Rights Reserved.</small></p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div id="sound" class="sound">
-    <div class="sound-wrapper"> <span class="sound-button"><img src="https://cinemavalley.net/wp-content/themes/cinemavalley/img/soundbutton_play.svg" alt="音楽を再生する"></span> </div>
-  </div>
+  <%- include( '_footer.ejs' ); %>
+  <%- include( '_sound.ejs' ); %>
   <script type="module" src="/main.ts"></script>
 </body>
 </html>

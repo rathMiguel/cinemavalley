@@ -1,0 +1,73 @@
+<%
+ const pageMeta = {
+  path: '/reservation/',
+  title: 'ご宿泊予約 - 森のスープ屋の夜 お手当てのための宿',
+  description: ''
+ }
+%>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <%- include( '_meta.ejs', { meta: pageMeta }); %>
+  </head>
+  <body class="page_reservation" id="page">
+    <header id="header">
+      <div class="container">
+        <div class="header-logo">
+          <h1><img class="image-header-logo" src="/img/footer_logo.png" alt="森のスープ屋の夜"><span class="header-text">お手当てのための宿</span></h1>
+        </div>
+        <div class="header-toggle">
+          <a href="https://cinemavalley.net/" class="nav-home js-nav-close">
+            <img src="/img/nav_button_home.png" alt="ホーム">
+          </a>
+        </div>
+      </div>
+    </header>
+    <main id="main" role="main">
+      <div class="area-pagetitle mb40">
+        <div class="container">
+          <div class="bg-pagetitle pr30-sp pl20-sp">
+            <h1 class="title-pagetitle">ご宿泊予約</h1>
+          </div>
+        </div>
+      </div>
+      <div class="area-main">
+        <div class="container margin-sp page-content">
+          <div class="reserve-block">
+            <ul class="list-dotted" style="list-style-type: none;">
+              <li>１泊２食付き、２名様にてご利用できます。<br />※1名様でのご宿泊も可能です。料金は割増になります。</li>
+              <li>ご宿泊料金は、次のご予約画面に記載がございます。</li>
+              <li>チェックイン15:00〜16:00、チェックアウト10:00まで</li>
+              <li>ご宿泊者は、中学生以上とさせていただきます。乳幼児の同伴はご遠慮ください。</li>
+            </ul>
+          </div>
+          <div class="reserve-block">
+            <h3 class="title-medium-up mb10">キャンセル料金規定</h3>
+            <p>少ない予約枠となっておりますので、ご予定がお決まりになってから、ご予約をお願いいたします。また、やむえない事情を除き、キャンセルはお控え頂きますようお願いいたします。</p>
+            <dl class="mb20"> <dt>30日〜15日前キャンセル</dt>
+              <dd>ご宿泊料金の30%</dd>
+            </dl>
+            <dl class="mb20"> <dt>14日〜4日前キャンセル</dt>
+              <dd>ご宿泊料金の50%</dd>
+            </dl>
+            <dl> <dt>3日前〜当日のキャンセル</dt>
+              <dd>ご宿泊料金の100%</dd>
+            </dl>
+          </div>
+          <div class="reserve-block">
+            <p><a href="/access/">宿へのアクセス情報はこちら</a></p>
+            <h3 class="title-medium-up mb10">送迎</h3>
+            <p>近隣の駅（伯耆大山・岸本・溝口駅）まで送迎いたします。ご希望の方は、お申し出ください。 </p>
+          </div>
+          <div class="reserve-system">
+            <div class="reserve-system_main"><a class="button button-reserve_next" href="https://reserva.be/cinemavalley/reserve?mode=htl&amp;evt_no=2eeJwzMjC1AAAB_gDQ&amp;room_num=1&amp;people=2.0.0.0&amp;fbclid=IwAR2d1LBi9t3vNY11zRocVSWD-bIyixD6UNWaKS-7gLuS3oHKEMlZJ-hlV9g" target="_blank" rel="noopener noreferrer">予約画面へ進む。<span class="color-sub">空室状況をご確認の上、ご予約下さい</span></a><small class="small">※一日一組限定のため、ご予約は先着順とさせていただきます。</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="totop"><a class="totop-item" href="#"><span class="totop-candle"><img src="/img/candle.png" alt=""></span><span class="totop-candlelight"><img src="/img/candle_light.png" alt=""></span></a></div>
+    <%- include( '_footer.ejs' ); %>
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>
