@@ -1,5 +1,6 @@
 // Font Awesome
 @import "../setting/_fa_variables";
+// @use "sass:math" as math;
 
 @mixin fa($icon){
 	font-family: FontAwesome;
