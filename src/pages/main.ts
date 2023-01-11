@@ -17,8 +17,12 @@ const userAgent = (function(u) {
     Tablet: u.indexOf('windows') !== -1 && u.indexOf('touch') !== -1 && u.indexOf('tablet pc') === -1 || u.indexOf('ipad') !== -1 || u.indexOf('android') !== -1 && u.indexOf('mobile') === -1 || u.indexOf('firefox') !== -1 && u.indexOf('tablet') !== -1 || u.indexOf('kindle') !== -1 || u.indexOf('silk') !== -1 || u.indexOf('playbook') !== -1,
     Mobile: u.indexOf('windows') !== -1 && u.indexOf('phone') !== -1 || u.indexOf('iphone') !== -1 || u.indexOf('ipod') !== -1 || u.indexOf('android') !== -1 && u.indexOf('mobile') !== -1 || u.indexOf('firefox') !== -1 && u.indexOf('mobile') !== -1 || u.indexOf('blackberry') !== -1
   };
-})(window.navigator.userAgent.toLowerCase());
+})(window.navigator.userAgent.toLowerCase())
 
+/**
+ * @param target 対象の変数
+ * @returns 値がundefinedなら0を返す
+ */
 
 const isUndefinedNumber = (target: number | undefined) => {
   if(target === undefined){
@@ -42,7 +46,7 @@ jQuery(function($) {
         scrollTop: 0
       }, 1500);
       return false
-    });
+    })
 
     $(window).on('scroll', function() {
       let scr: number | undefined = $(this).scrollTop()
