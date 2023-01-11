@@ -329,6 +329,7 @@
       margin-left: -362px;
     }
   }
+
   &_garden{
     margin-top: -114px;
     margin-left: 54px;
@@ -340,6 +341,10 @@
   &_ruhe{
     margin-top: -54px;
     margin-left: -41px;
+    a{
+      color: #8D8D8D;
+      text-decoration: none;
+    }
     @include media(pc){
       margin-top: -65px;
       margin-left: -310px;
@@ -353,6 +358,7 @@
       margin-left: -190px;
     }
   }
+
   &_soup{
     margin-top: 116px;
     margin-left: 35px;
@@ -361,6 +367,7 @@
       margin-left: 88px;
     }
   }
+
   &_bath{
     margin-top: 148px;
     margin-left: -146px;
@@ -553,10 +560,6 @@
     padding-top: 25px;
     padding-bottom: 25px;
 
-    &:first-child{
-      // width: 100%;
-    }
-
     &.li-full{
       width: 100%;
     }
@@ -587,6 +590,54 @@
     bottom: 29px;
     left: -14px;
   }
+
+  &.link-map_message{
+    &::before{
+      bottom: 7px;
+    }
+  }
+}
+
+//
+// schedule
+//
+
+.schedule-area{
+  text-align: center;
+
+  .schedule-title{
+    img{
+      @include media(sp){
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+.block-poet{
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 2.2;
+}
+
+.block-schedule{
+  display: flex;
+  justify-content: center;
+  .timetable{
+    dt{
+      float: left;
+      padding-bottom: 5px;
+    }
+
+    dd{
+      padding-left: 5em;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.schedule-day{
+  margin-bottom: 40px;
 }
 
 //
