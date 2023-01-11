@@ -106,7 +106,9 @@ jQuery(function($) {
     })
 
     $(window).on('load', function() {
-      $('body').addClass('is-loaded')
+      setTimeout(function() {
+        $('body').addClass('is-loaded')
+      }, 100)
     })
 
     

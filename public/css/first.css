@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+body{
+  background-color: #fff;
+  background-image: url('../img/bg_page.png');
+}
+
+@media only screen and (min-width: 961px){
+  .area-hero{
+    height: 768px;
+  }
+  
+  .area-hero .hero-wrapper{
+    height: 658px;
+  }
+}
+
+.area-hero .block-hero-second{
+  opacity: 0;
+}

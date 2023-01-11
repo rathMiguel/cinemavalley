@@ -127,7 +127,7 @@
     top: 256px;
     opacity: 1;
     left: 50%;
-    transition: all 2s ease 1.5s;
+    transition: opacity 2s ease 1.5s;
     @include media(sp){
       width: 190px;
       margin-left: -153px;
@@ -141,11 +141,11 @@
     position: absolute;
     top: 259px;
     opacity: 0;
-    transition: all 4s ease 3s;
+    transition: opacity 4s ease 3s;
     @include media(sp){
       width: 308px;
       left: 50%;
-      margin-left: math.div(308px, 2);
+      margin-left: math.div(-308px, 2);
     }
   }
 
