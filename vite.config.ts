@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/",
   publicDir: resolve(__dirname, 'public'),
   server: {
-    open: '/'
+    open: false
   },
   build: {
     outDir: resolve(__dirname, 'dist'),
