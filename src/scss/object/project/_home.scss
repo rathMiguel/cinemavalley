@@ -546,20 +546,26 @@
 
 .other-list{
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   @include media(pc){
     width: 750px;
     margin-left: auto;
     margin-right: auto;
+  }
+  @include media(sp){
+    flex-direction: column;
+    justify-content: center;
   }
   li{
     text-align: center;
     width: 50%;
     padding-top: 25px;
     padding-bottom: 25px;
-
+    @include media(sp){
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
     &.li-full{
       width: 100%;
     }
