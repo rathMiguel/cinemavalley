@@ -99,3 +99,11 @@
     }
   }
 }
+
+.modal-title_schedule{
+  margin-bottom: 60px;
+  margin-top: 20px;
+  @include media(sp){
+    margin-bottom: 40px;
+  }
+}
