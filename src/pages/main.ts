@@ -79,7 +79,8 @@ jQuery(function($) {
         autoplay: false,
         arrows: true,
         dots: true,
-        infinite: false
+        infinite: false,
+        speed: 2000
       });
 
       $('.map-block').css('transform', 'scale(' + scale + ')')
