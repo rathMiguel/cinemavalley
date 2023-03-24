@@ -878,6 +878,14 @@
   }
 
   // year
+  &.area-year{
+    @include media(sp){
+      @include fadeup;
+      transition: all 2s ease;
+      transition-delay: 0.2s;
+    }
+  }
+
   &.fadeup-year1{
     @extend %fadeup;
     @include fadeup;
@@ -916,6 +924,12 @@
   }
 
   &.is-inview-go{
+    &.area-year{
+      @include media(sp){
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
     &.fadeup-year1{ @extend %fadeup-end; }
     &.fadeup-year2{ @extend %fadeup-end; }
     &.fadeup-year3{ @extend %fadeup-end; }
